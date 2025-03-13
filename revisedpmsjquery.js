@@ -8,7 +8,19 @@ function validate_cvv(cvv) {
     return true;
 }
 
+var targetPathsBoutique = ['/boutique-hotel/'];
+
 jQuery(document).ready(function($) {
+
+    if (targetPathsBoutique.includes(window.location.pathname)) {
+		$('.boutique-amenities-mobile .icon-grid-rentals').slick({
+               infinite: true,
+               slidesToShow: 1,
+               slidesToScroll: 1,
+			   autoplay:true,
+			   arrows:false,
+		});
+	}
    
    $('#confirmbooking').on('click', function() {
        

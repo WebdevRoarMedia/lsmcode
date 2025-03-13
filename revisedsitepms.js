@@ -1,4 +1,3 @@
-
 jQuery.urlParam = function(name) {
     return new URLSearchParams(window.location.search).get(name);
 };
